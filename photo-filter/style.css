@@ -92,6 +92,7 @@ output {
   border-radius: 2px;
   transition: 0.3s;
 }
+
 .btn-container {
   margin-bottom: 20px;
   padding: 2px;
@@ -161,6 +162,15 @@ output {
   width: 100%;
   max-width: 60%;
 }
+
+
+
+
+
+
+
+
+
 :root {
   --blur: 0px;
   --invert: 0%;
@@ -174,9 +184,15 @@ img {
   max-height: 520px;
   max-width: 830px;
   object-fit: contain;
-  filter: blur(var(--blur, 0px)) invert(var(--invert, 0%))
-    sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%))
+  filter:
+    blur(var(--blur, 0px)) 
+    invert(var(--invert, 0%))
+    sepia(var(--sepia, 0%))
+    saturate(var(--saturate, 100%))
     hue-rotate(var(--hue, 0deg));
+}
+canvas{
+  display: block;
 }
 .fullscreen {
   position: fixed;
@@ -191,6 +207,7 @@ img {
   transition: 0.3s;
   cursor: pointer;
   background-image: url('assets/svg/fullscreen-open.svg');
+  
 }
 .fullscreen:hover {
   background-color: rgba(255, 255, 255, 0.5);
