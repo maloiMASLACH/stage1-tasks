@@ -1,1 +1,1 @@
-# stage1-tasks
+# https://maloimaslach.github.io/stage1-tasks/photo-filter/
